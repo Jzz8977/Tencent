@@ -27,7 +27,7 @@ a:hover {
   float: right; }
 
 .bg {
-  background: url(../img/icon.png) no-repeat center; }
+  background: url(../img/icon.png) no-repeat; }
 
 #header-top {
   line-height: 30px;
@@ -134,18 +134,277 @@ a:hover {
           box-sizing: border-box;
           display: none;
           width: 825px;
-          height: 245px;
+          height: 255px;
           background: #e4e4e4;
           border-radius: 1px;
           position: absolute;
           left: -765px;
-          top: 30px;
-          padding: 6px;
+          top: 25px;
+          padding: 5px;
+          z-index: 999;
           border: 1px solid #666; }
           #header-top .header-top .header-top-right .game-index .game-table-hidden table {
+            box-sizing: border-box;
             width: 810px;
             height: 230px;
             background: #fff;
-            border: 1px solid #666; }
+            border: 1px solid #666;
+            border-collapse: separate; }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table .th {
+              color: #00a3de;
+              font-weight: 600; }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table td {
+              border: 1px solid #ccc;
+              line-height: 30px;
+              text-indent: 5px;
+              background: linear-gradient(to bottom, white, white, #f8f8f8); }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table td:hover {
+              color: #00a3de; }
       #header-top .header-top .header-top-right .game-index:hover .game-table-hidden {
         display: block; }
+
+header {
+  height: 108px; }
+  header .logo {
+    width: 295px;
+    height: 75px;
+    background: #fff;
+    background: url(../img/header.png) no-repeat;
+    margin: 20px 0px;
+    cursor: pointer; }
+  header .search {
+    box-sizing: border-box;
+    border: 2px solid #f74a4a;
+    margin-left: 145px;
+    margin-top: 20px;
+    width: 486px;
+    height: 38px;
+    background: #f74a4a;
+    position: relative;
+    left: 0;
+    top: 0; }
+    header .search .search-tit {
+      text-align: center;
+      line-height: 36px;
+      width: 110px;
+      height: 32px;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+      border-right: 1px solid #ccc;
+      float: left;
+      text-decoration: none;
+      z-index: 33; }
+      header .search .search-tit s {
+        float: right;
+        margin-top: 3px;
+        width: 11px;
+        height: 16px;
+        background-position: 0 -48px; }
+      header .search .search-tit .search-game {
+        display: none;
+        width: 418px;
+        height: 369px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 36px;
+        z-index: 1;
+        border: 1px solid #ccc;
+        border-top: 0; }
+        header .search .search-tit .search-game .search-game-top {
+          width: 418px;
+          height: 150px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-top .search-game-top-left {
+            width: 80px;
+            height: 130px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-top .search-game-top-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 130px;
+            background: #fff;
+            color: #000; }
+            header .search .search-tit .search-game .search-game-top .search-game-top-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-top .search-game-top-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-middle {
+          clear: both;
+          border-bottom: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          width: 418px;
+          height: 80px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-middle .search-game-middle-left {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-middle .search-game-middle-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 80px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-bottom {
+          clear: both;
+          border-bottom: 1px solid #ccc;
+          width: 418px;
+          height: 35px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-left {
+            width: 80px;
+            height: 35px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 35px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-footer {
+          clear: both;
+          width: 418px;
+          height: 100px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-footer .search-game-footer-left {
+            width: 80px;
+            height: 100px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-footer .search-game-footer-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 100px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+    header .search .search-tit:hover {
+      height: 38px; }
+    header .search .search-tit:hover .search-game {
+      display: block; }
+    header .search .search-txt {
+      border: 0;
+      width: 330px;
+      height: 34px;
+      background: #fff;
+      text-indent: 5px;
+      float: left; }
+    header .search .search-btn {
+      width: 38px;
+      height: 35px;
+      background: #f74a4a;
+      float: right;
+      border: 0;
+      border-bottom: 3px solid #e43333;
+      background-image: url(../img/search-btn.png); }
+    header .search .mar {
+      margin-right: 25px; }
+
+nav {
+  width: 100%;
+  height: 54px;
+  background: #3a3f4a;
+  clear: both; }
+  nav .navbox {
+    color: #acb1bb;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 54px; }
+    nav .navbox li {
+      position: relative;
+      left: 0;
+      top: 0;
+      padding: 0 30px; }
+      nav .navbox li a {
+        text-decoration: none; }
+      nav .navbox li .menu {
+        float: left;
+        width: 24px;
+        height: 28px;
+        margin-top: 14px;
+        background-position: 0 -175px; }
+      nav .navbox li .new {
+        float: right;
+        width: 20px;
+        height: 17px;
+        margin-top: 23px;
+        background: url(../img/newtips.png) no-repeat; }
+      nav .navbox li > .nav-active {
+        display: none;
+        color: #000;
+        position: absolute;
+        left: 0;
+        top: 54px; }
+        nav .navbox li > .nav-active li {
+          background: #fff; }
+        nav .navbox li > .nav-active > li:hover a {
+          color: #f74a4a;
+          text-decoration: none; }
+    nav .navbox li:hover {
+      background: #f55656; }
+    li:hover nav .navbox > li > a {
+      color: #fff;
+      text-decoration: none; }
+    nav .navbox li:hover .nav-active {
+      display: block;
+      color: #000; }
+    nav .navbox .cart {
+      width: 200px;
+      height: 43px;
+      background: #f55656;
+      margin-top: 5px;
+      margin-left: 0px;
+      line-height: 43px;
+      cursor: pointer; }
+      nav .navbox .cart a {
+        color: #fff;
+        float: left;
+        margin-left: 40px; }
+        nav .navbox .cart a .cart-ic {
+          color: #fff;
+          float: left;
+          margin-top: 14px;
+          margin-right: 10px;
+          width: 21px;
+          height: 16px;
+          background-position: -60px -20px; }
+      nav .navbox .cart i {
+        font-style: normal;
+        margin: 0 30px;
+        float: right;
+        color: #fff; }
+      nav .navbox .cart b {
+        float: right;
+        color: #fff; }
