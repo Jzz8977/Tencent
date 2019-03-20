@@ -1,0 +1,153 @@
+@import 'public';
+
+.mid{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.bg{
+    background: url(../img/icon.png) no-repeat center;
+}
+#header-top{
+    line-height:30px;
+    font-size:12px;
+    color:#666;
+    @include size(100%,31px,#f9f9f9);
+    border-top:1px solid #b6b4b6;
+    .header-top{
+        height: 30px;
+        .header-top-left{
+            @include size(310px,30px,#f9f9f9);
+            a{
+                color:#666;
+                float: left;
+                s{
+                    float: left;
+                    width: 11px;
+                    height: 30px;
+                    background-position: 0 8px;
+                }
+            }
+            a:hover{
+                color: #f74a4a;
+            }
+            i{
+                color:#666;
+                font-style:normal;
+                float:left;
+                margin:0 10px;
+            }
+        }
+        .header-top-right{
+            @include size(500px,30px,#f9f9f9);
+            a{
+                color:#666;
+                float: right;
+                s{
+                    float: right;
+                    width: 11px;
+                    height: 18px;
+                    background-position: 0 -48px;
+                }
+            }
+            a:hover{
+                color: #f74a4a;
+//              text-decoration: underline;
+            }
+            i{
+                color:#666;
+                font-style:normal;
+                float:right;
+                margin:0 10px;
+            }
+            .BBS{
+                float: right;
+                position:relative;
+                .BBS-a{
+                    color:#666;
+                    float: right;
+                }
+                .BBS-a:hover{
+                    color: #f74a4a;
+//                  text-decoration: underline;
+                }
+                .BBS-on{
+                    display: none;
+                    text-align: center;
+                    float: left;
+                    @include size(70px,59px,#fff);
+                    @include pos(absolute,0px,0);
+//                  border:1px solid #666;
+                   z-index: 1;
+                    .weibo{
+//                      margin-left: -30px;
+                        display: block;
+                        width: 75px;
+                        text-align: center;
+                    }
+                    
+                }
+                 .mark{
+                        display: none;
+                        @include size(75px,60px,#fff);
+                        @include pos(absolute,-2px,0px);
+                        border: 1px solid #666;
+                         opacity: 1;
+                         z-index: 1;
+                     }
+              
+            }
+            .BBS:hover  .BBS-on{
+                    display: block;
+             }
+             .BBS:hover .mark{
+                 display: block;
+             }
+             
+             
+             
+            .game-index{
+                float: right;
+                position:relative;
+                .game-index-a{
+                    margin-top:7px;
+                    border:1px solid #e7e8e7;
+                    @include size(60px,16px,#fff);
+                    line-height:16px;
+                     s{
+                        float: right;
+                        width: 11px;
+                        height: 18px;
+                        background-position: 0 -20px;
+                    }
+                }
+                
+               .game-table-hidden{
+                   box-sizing: border-box;
+                   display:none;
+                   @include size(825px,245px,#e4e4e4);
+//                  @include size(825px,245px,#000)
+                   border-radius :1px;
+                   @include pos(absolute,-765px,30px);
+                   padding:6px;
+                   border:1px solid #666;
+                   table{
+                       @include size(810px,230px,#fff);
+                       border:1px solid #666;
+                   }
+                }
+            }
+            .game-index:hover  .game-table-hidden{
+                   display: block;
+            }
+            
+        }
+    }
+}
+

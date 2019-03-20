@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+img{
+    border:0;
+    vertical-align:middle;
+}
+a{
+    text-decoration: none;
+    color:#666666;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@mixin size($width,$height,$bg){
+    width:$width;
+    height:$height;
+    background:$bg;
+}
+@mixin pos($position,$left,$top){
+    position:$position;
+    left : $left;
+    top : $top;
+}
+$fontSize:16px;
