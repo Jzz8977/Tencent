@@ -24,7 +24,7 @@ gulp.task('js',function(){
 	gulp.src('./src/ES5JS/*.js')
 	.pipe(uglify())
 	.pipe(concat('main.min.js'))
-	.pipe(gulp.dest('./src/mainjs'))
+	.pipe(gulp.dest('./dist/js'))
 })
 //处理sass
 gulp.task('sass',()=>{

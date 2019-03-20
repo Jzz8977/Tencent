@@ -29,6 +29,9 @@ a:hover {
 .bg {
   background: url(../img/icon.png) no-repeat; }
 
+.block {
+  display: block; }
+
 #header-top {
   line-height: 30px;
   font-size: 12px;
@@ -139,7 +142,7 @@ a:hover {
           border-radius: 1px;
           position: absolute;
           left: -765px;
-          top: 25px;
+          top: 30px;
           padding: 5px;
           z-index: 999;
           border: 1px solid #666; }
@@ -160,8 +163,6 @@ a:hover {
               background: linear-gradient(to bottom, white, white, #f8f8f8); }
             #header-top .header-top .header-top-right .game-index .game-table-hidden table td:hover {
               color: #00a3de; }
-      #header-top .header-top .header-top-right .game-index:hover .game-table-hidden {
-        display: block; }
 
 header {
   height: 108px; }

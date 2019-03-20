@@ -14,7 +14,9 @@
 .bg{
     background: url(../img/icon.png) no-repeat;
 }
-
+.block{
+    display: block;
+}
 #header-top{
     line-height:30px;
     font-size:12px;
@@ -135,7 +137,7 @@
                    @include size(825px,255px,#e4e4e4);
 //                  @include size(825px,245px,#000)
                    border-radius :1px;
-                   @include pos(absolute,-765px,25px);
+                   @include pos(absolute,-765px,30px);
                    padding:5px;
                    z-index: 999;
                    border:1px solid #666;
@@ -162,9 +164,9 @@
                    }
                 }
             }
-            .game-index:hover  .game-table-hidden{
-                   display: block;
-            }
+            // .game-index:hover  .game-table-hidden{
+            //        display: block;
+            // }
             
         }
     }
