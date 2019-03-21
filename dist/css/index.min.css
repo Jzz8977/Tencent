@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+html, body {
+  height: 100%; }
+
 li {
   list-style: none; }
 
@@ -340,27 +343,23 @@ nav {
   nav .navbox {
     color: #acb1bb;
     height: 54px;
-    display: flex;
-    justify-content: space-between;
     line-height: 54px; }
     nav .navbox li {
+      width: 128px;
+      text-align: center;
+      float: left;
       position: relative;
       left: 0;
       top: 0;
-      padding: 0 30px; }
+      cursor: pointer; }
       nav .navbox li a {
         text-decoration: none; }
-      nav .navbox li .menu {
-        float: left;
-        width: 24px;
-        height: 28px;
-        margin-top: 14px;
-        background-position: 0 -175px; }
       nav .navbox li .new {
         float: right;
         width: 20px;
         height: 17px;
         margin-top: 23px;
+        margin-right: 10px;
         background: url(../img/newtips.png) no-repeat; }
       nav .navbox li > .nav-active {
         display: none;
@@ -373,6 +372,8 @@ nav {
         nav .navbox li > .nav-active > li:hover a {
           color: #f74a4a;
           text-decoration: none; }
+    nav .navbox .navbox-firstli {
+      width: 190px; }
     nav .navbox li:hover {
       background: #f55656; }
     li:hover nav .navbox > li > a {
@@ -382,7 +383,7 @@ nav {
       display: block;
       color: #000; }
     nav .navbox .cart {
-      width: 200px;
+      width: 230px;
       height: 43px;
       background: #f55656;
       margin-top: 5px;
@@ -408,4 +409,302 @@ nav {
         color: #fff; }
       nav .navbox .cart b {
         float: right;
-        color: #fff; }
+        color: #fff;
+        margin-right: 20px; }
+
+#wrap-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f4f6 url(../img/wrap_bg.png) no-repeat; }
+  #wrap-section #banner {
+    height: 330px;
+    position: relative;
+    left: 0;
+    top: 0; }
+    #wrap-section #banner .banner-left {
+      width: 190px;
+      height: 384px;
+      background: #f55656;
+      position: absolute;
+      left: 0;
+      top: -54px; }
+      #wrap-section #banner .banner-left li {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 190px;
+        height: 65px;
+        background: #f55656;
+        text-align: center;
+        color: #fff;
+        border-bottom: 1px solid #ee4545;
+        cursor: pointer;
+        text-indent: -30px; }
+      #wrap-section #banner .banner-left .banner-left-firstli {
+        height: 54px;
+        opacity: 0.7;
+        line-height: 34px;
+        padding: 10px 20px;
+        text-indent: 0; }
+      #wrap-section #banner .banner-left .banner-left-lastli {
+        border-bottom: 0;
+        height: 70px; }
+      #wrap-section #banner .banner-left .iconfont {
+        margin-right: 5px; }
+    #wrap-section #banner .banner-middle {
+      width: 770px;
+      height: 330px;
+      background: #fff;
+      overflow: hidden;
+      text-align: center;
+      margin-left: 190px;
+      position: relative; }
+      #wrap-section #banner .banner-middle ul {
+        height: 100%;
+        width: 3850px;
+        padding: 0;
+        position: absolute; }
+        #wrap-section #banner .banner-middle ul li {
+          float: left;
+          position: relative;
+          height: 100%;
+          width: 770px; }
+          #wrap-section #banner .banner-middle ul li img {
+            width: 100%; }
+          #wrap-section #banner .banner-middle ul li p {
+            width: 770px;
+            height: 40px;
+            color: #fff;
+            line-height: 40px;
+            text-align: left;
+            text-indent: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            bottom: 0px; }
+      #wrap-section #banner .banner-middle ol {
+        width: 90px;
+        height: 12px;
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        display: flex;
+        justify-content: space-between; }
+        #wrap-section #banner .banner-middle ol li {
+          background: #fff;
+          width: 12px;
+          height: 12px; }
+        #wrap-section #banner .banner-middle ol .red {
+          background: red; }
+    #wrap-section #banner .banner-right {
+      width: 230px;
+      height: 330px;
+      background: #fff; }
+      #wrap-section #banner .banner-right .banner-right-top {
+        width: 230px;
+        height: 85px;
+        background: #fff; }
+        #wrap-section #banner .banner-right .banner-right-top img {
+          float: left;
+          width: 50px;
+          height: 50px;
+          margin: 20px 20px; }
+        #wrap-section #banner .banner-right .banner-right-top p {
+          margin-top: 20px;
+          font-size: 12px;
+          width: 140px;
+          float: left; }
+          #wrap-section #banner .banner-right .banner-right-top p a {
+            color: #00a3de; }
+      #wrap-section #banner .banner-right .banner-right-middle {
+        width: 230px;
+        height: 118px;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
+        #wrap-section #banner .banner-right .banner-right-middle h6 {
+          width: 100%;
+          float: left;
+          line-height: 30px;
+          text-align: left;
+          margin-left: 10px; }
+        #wrap-section #banner .banner-right .banner-right-middle div {
+          float: left;
+          width: 50px;
+          height: 80px;
+          font-size: 12px;
+          margin: 0 13px; }
+          #wrap-section #banner .banner-right .banner-right-middle div img {
+            width: 100%; }
+      #wrap-section #banner .banner-right .banner-right-bottom {
+        width: 230px;
+        height: 125px;
+        background: #fff; }
+        #wrap-section #banner .banner-right .banner-right-bottom h6 {
+          float: left;
+          width: 100%;
+          margin-left: 10px;
+          line-height: 30px; }
+          #wrap-section #banner .banner-right .banner-right-bottom h6 span {
+            font-weight: normal;
+            float: right;
+            margin-right: 20px; }
+        #wrap-section #banner .banner-right .banner-right-bottom ul {
+          height: 85px;
+          font-size: 12px;
+          padding: 20px; }
+          #wrap-section #banner .banner-right .banner-right-bottom ul li {
+            line-height: 20px;
+            width: 100%; }
+            #wrap-section #banner .banner-right .banner-right-bottom ul li b {
+              font-weight: normal;
+              float: right; }
+
+#hotSell {
+  clear: both;
+  height: 340px; }
+  #hotSell .hotSell-left {
+    width: 950px;
+    height: 341px;
+    clear: both; }
+    #hotSell .hotSell-left h3 {
+      line-height: 49px;
+      font-weight: normal;
+      color: #666; }
+      #hotSell .hotSell-left h3 .iconfont {
+        margin: 5px 10px;
+        font-size: 30px; }
+    #hotSell .hotSell-left .hotSell-left-section {
+      width: 950px;
+      height: 289px;
+      background: #fff; }
+      #hotSell .hotSell-left .hotSell-left-section li {
+        box-sizing: border-box;
+        width: 315px;
+        height: 145px;
+        border-right: 1px solid #f3f4f6;
+        border-bottom: 1px solid #f3f4f6;
+        padding: 30px;
+        float: left; }
+        #hotSell .hotSell-left .hotSell-left-section li img {
+          width: 80px;
+          height: 67px;
+          margin: 8px;
+          float: left; }
+        #hotSell .hotSell-left .hotSell-left-section li > h6 .h6-sp {
+          color: #3a3f4a;
+          font-weight: normal; }
+        #hotSell .hotSell-left .hotSell-left-section li i {
+          display: block;
+          color: #3a3f4a;
+          font-style: normal; }
+          #hotSell .hotSell-left .hotSell-left-section li i b {
+            color: #f74a4a;
+            display: inline-block;
+            margin-left: 10px; }
+        #hotSell .hotSell-left .hotSell-left-section li s {
+          display: block;
+          color: #3a3f4a;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 12px; }
+        #hotSell .hotSell-left .hotSell-left-section li a {
+          display: block;
+          width: 90px;
+          height: 27px;
+          background: #f74a4a;
+          color: #fff;
+          font-size: 12px;
+          text-align: center;
+          line-height: 27px;
+          float: left;
+          text-decoration: none;
+          border-bottom: 2px solid #e43333; }
+      #hotSell .hotSell-left .hotSell-left-section .no-border-ri {
+        border-right: 0; }
+      #hotSell .hotSell-left .hotSell-left-section .no-border-bo {
+        border-bottom: 0; }
+  #hotSell .hotSell-right {
+    width: 230px;
+    height: 340px;
+    background: #f3f4f6;
+    font-size: 12px; }
+    #hotSell .hotSell-right h3 {
+      line-height: 49px;
+      font-weight: normal;
+      color: #666; }
+      #hotSell .hotSell-right h3 .iconfont {
+        margin: 5px 10px;
+        font-size: 30px; }
+    #hotSell .hotSell-right .hotSell-right-section {
+      width: 230px;
+      height: 290px;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 20px; }
+      #hotSell .hotSell-right .hotSell-right-section img {
+        width: 190px;
+        height: 165px; }
+      #hotSell .hotSell-right .hotSell-right-section > h6 .h6-sp {
+        color: #3a3f4a;
+        font-weight: normal; }
+      #hotSell .hotSell-right .hotSell-right-section i {
+        display: block;
+        color: #3a3f4a;
+        font-style: normal; }
+        #hotSell .hotSell-right .hotSell-right-section i b {
+          color: #f74a4a;
+          display: inline-block;
+          margin-left: 10px; }
+      #hotSell .hotSell-right .hotSell-right-section s {
+        display: block;
+        color: #3a3f4a;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px; }
+      #hotSell .hotSell-right .hotSell-right-section a {
+        margin-top: 5px;
+        clear: both;
+        display: block;
+        width: 190px;
+        height: 27px;
+        background: #f74a4a;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 27px;
+        float: left;
+        text-decoration: none;
+        border-bottom: 2px solid #e43333; }
+      #hotSell .hotSell-right .hotSell-right-section .time {
+        width: 150px;
+        height: 20px;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between; }
+        #hotSell .hotSell-right .hotSell-right-section .time > span {
+          margin-top: 3px; }
+        #hotSell .hotSell-right .hotSell-right-section .time em {
+          float: left;
+          font-style: normal; }
+        #hotSell .hotSell-right .hotSell-right-section .time .day {
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: #7f8b99; }
+        #hotSell .hotSell-right .hotSell-right-section .time .hour {
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: #7f8b99; }
+        #hotSell .hotSell-right .hotSell-right-section .time .minute {
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: #7f8b99; }
+        #hotSell .hotSell-right .hotSell-right-section .time .second {
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: #7f8b99; }
