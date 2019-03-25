@@ -1,0 +1,248 @@
+@import "public";
+.mark{
+    background:rgba(0,0,0,0.6);
+   
+    .float{
+        width:480px;
+        border-radius: 5px;
+        text-align: left;
+        text-indent:30px;
+        left: 50%;
+        .close{
+            text-indent: 0;
+        }
+        h4{
+            font-size: 26px;
+            color:#666;
+            line-height: 100px;
+            margin-top : 25px;
+            font-weight: normal;
+        }
+        h5{
+            font-size: 26px;
+            line-height:50px;
+            margin-top:0;
+        }
+        #sendmsg{
+            width: 380px;
+            height: 60px;
+            color: #fff;
+            background: #3789ff;
+            border-radius:8px;
+            margin: 0 50px;
+        }
+    }
+}
+
+
+.register-logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    font-size: 40px;
+    // font-weight: 600;
+    font-family: "微软雅黑";
+    img{
+        width: 37px;
+        
+    }
+}
+.register-bg{
+    // @include pos(relative,0,0);
+    //  width: 480px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width:20%;
+    height: 100%;
+    //  height: 100%;
+     img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+     }
+}
+.register-tit{
+    height:80px;
+    float: right;
+    div{
+        margin: 20px 40px 0 0;
+        padding:10px 0 0;
+        font-size: 16px;
+        line-height: 24px;
+        height: 24px;
+        float: right;
+        position: relative;
+        a{
+            float: left;
+        }
+        img{
+            position: absolute;
+        }
+        
+        .language-ul{
+            display: none;
+        }
+        
+    }
+    .language{
+        img{
+            top: 20px;
+            right: -10px;
+        }
+        .down{
+            display: none;
+        }
+    }
+    .email{
+        img{
+            top: 15px;
+            left: -21px;
+        }
+    }
+    .logo3{
+       
+        // top:4px;
+       a{
+        background: #ff734d;
+           color:#fff;
+           border-radius: 5px;
+       }
+        
+        height: 20px;
+        // line-height: 0px;
+        img{
+            top: 2px;
+            left: -21px;
+        }
+    }
+}
+.register-section{
+    clear: both;
+    float: right;
+    width: 490px;
+    height: 610px; 
+    margin-top:30px;
+    margin-right: 25%;
+    position: relative;
+    h1{
+        font:45px "微软雅黑";
+        line-height: 80px;
+    }
+    h2{
+        width: 100%;
+        font:30px "微软雅黑";
+        font-weight: normal;
+        color: #333333;
+        a{
+            float: right;
+            color:#769eff;
+        }
+    }
+    div{
+        width: 485px;
+        height: 53px;
+        margin: 16px 3px;
+        overflow: hidden;
+        position: relative;
+        input{
+            width: 480px;
+            height: 50px;
+            border:1px solid #aaaaaa;
+            border-radius: 5px;
+            text-indent: 10px;
+        }
+        input[type="button"]{
+            text-indent: 0px;
+        }
+        .register-btn{
+            background: #3184ff;
+            color: #fff;
+            font-size: 24px;
+        }
+        p{
+            color: red;
+        
+        }
+        .pwderror{
+            display: none;
+        }
+        .ok{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: none;
+
+        }
+        
+    }
+    .phonenumber{
+        width: 480px;
+        height: 73px;
+        // height: 140px;
+        // margin-bottom: 20px;
+        span{
+            color: #ccc;
+            font-size: 12px;
+            
+        }       
+        #phone,.outCode{
+            width: 153px;
+            height: 50px;
+            border-color: 1px solid #ccc;
+            color:#ccc;
+            border-radius: 5px;
+            text-indent: 10px;
+        }
+        #number,.getCode{
+            width: 320px;
+            margin-left: 5px;
+
+        } 
+        .getCode{
+            background: #3184ff;
+            font: 24px "微软雅黑";
+            color: #fff;
+        }
+        .outCode{
+            box-sizing: border-box;
+        }
+        .numError{
+            display: none;
+            font-size: 12px;
+        }
+    }
+    .argeement{
+        width: 480px;
+        height: 40px;
+        position: relative;
+        color: #ccc;
+        font-size: 12px;
+        text-indent: 20px;
+        img{
+            
+            position: absolute;
+            bottom: 23px;
+            left: 2px;
+
+        }
+        .downImg{
+            position: relative;
+            right: 0px;
+            bottom: 0px;
+        }
+        .argeeCheck{
+            display: none;
+        }
+        
+    }
+}
+.register-footer{
+    position: fixed;
+    // top:100%;
+    bottom:0;
+    right: 28%;
+    color: #ccc;
+
+}

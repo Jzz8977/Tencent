@@ -1,0 +1,293 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  position: relative; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+a:hover {
+  text-decoration: underline; }
+
+.mid {
+  width: 1190px;
+  margin: 0 auto; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.bg {
+  background: url(../img/icon.png) no-repeat; }
+
+.block {
+  display: block; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(230, 245, 255, 0.7);
+  border: 1px solid #ccc;
+  z-index: 999; }
+  .mark .float {
+    width: 620px;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    left: 36%;
+    top: 21%;
+    text-align: center; }
+    .mark .float h5 {
+      color: #333333;
+      width: 100%;
+      font-size: 20px;
+      line-height: 50px;
+      font-style: normal;
+      margin-top: 30px; }
+    .mark .float span {
+      display: block;
+      width: 100%;
+      line-height: 40px;
+      color: #666666;
+      font-size: 16px; }
+      .mark .float span .quick {
+        color: #3481cf;
+        cursor: pointer; }
+    .mark .float p {
+      margin: 10px 0;
+      width: 100%; }
+      .mark .float p input {
+        width: 270px;
+        height: 39px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-indent: 10px; }
+      .mark .float p #sbtn {
+        background: #86ce2f;
+        border-radius: 0;
+        color: #fff;
+        cursor: pointer; }
+    .mark .float .res {
+      position: absolute;
+      bottom: 15px;
+      right: 5px;
+      width: 284px; }
+      .mark .float .res b {
+        float: left;
+        font-weight: normal;
+        font-size: 12px;
+        cursor: pointer; }
+      .mark .float .res i {
+        float: left;
+        font-style: normal;
+        font-size: 12px;
+        color: #333;
+        margin: 0 20px; }
+    .mark .float .close {
+      display: block;
+      width: 40px;
+      height: 35px;
+      font-size: 40px;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      text-decoration: none; }
+    .mark .float .close:hover {
+      background: linear-gradient(to bottom, #ff4242, #ff9e9e); }
+
+.mark {
+  background: rgba(0, 0, 0, 0.6); }
+  .mark .float {
+    width: 480px;
+    border-radius: 5px;
+    text-align: left;
+    text-indent: 30px;
+    left: 50%; }
+    .mark .float .close {
+      text-indent: 0; }
+    .mark .float h4 {
+      font-size: 26px;
+      color: #666;
+      line-height: 100px;
+      margin-top: 25px;
+      font-weight: normal; }
+    .mark .float h5 {
+      font-size: 26px;
+      line-height: 50px;
+      margin-top: 0; }
+    .mark .float #sendmsg {
+      width: 380px;
+      height: 60px;
+      color: #fff;
+      background: #3789ff;
+      border-radius: 8px;
+      margin: 0 50px; }
+
+.register-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  font-size: 40px;
+  font-family: "微软雅黑"; }
+  .register-logo img {
+    width: 37px; }
+
+.register-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%; }
+  .register-bg img {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+
+.register-tit {
+  height: 80px;
+  float: right; }
+  .register-tit div {
+    margin: 20px 40px 0 0;
+    padding: 10px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    float: right;
+    position: relative; }
+    .register-tit div a {
+      float: left; }
+    .register-tit div img {
+      position: absolute; }
+    .register-tit div .language-ul {
+      display: none; }
+  .register-tit .language img {
+    top: 20px;
+    right: -10px; }
+  .register-tit .language .down {
+    display: none; }
+  .register-tit .email img {
+    top: 15px;
+    left: -21px; }
+  .register-tit .logo3 {
+    height: 20px; }
+    .register-tit .logo3 a {
+      background: #ff734d;
+      color: #fff;
+      border-radius: 5px; }
+    .register-tit .logo3 img {
+      top: 2px;
+      left: -21px; }
+
+.register-section {
+  clear: both;
+  float: right;
+  width: 490px;
+  height: 610px;
+  margin-top: 30px;
+  margin-right: 25%;
+  position: relative; }
+  .register-section h1 {
+    font: 45px "微软雅黑";
+    line-height: 80px; }
+  .register-section h2 {
+    width: 100%;
+    font: 30px "微软雅黑";
+    font-weight: normal;
+    color: #333333; }
+    .register-section h2 a {
+      float: right;
+      color: #769eff; }
+  .register-section div {
+    width: 485px;
+    height: 53px;
+    margin: 16px 3px;
+    overflow: hidden;
+    position: relative; }
+    .register-section div input {
+      width: 480px;
+      height: 50px;
+      border: 1px solid #aaaaaa;
+      border-radius: 5px;
+      text-indent: 10px; }
+    .register-section div input[type="button"] {
+      text-indent: 0px; }
+    .register-section div .register-btn {
+      background: #3184ff;
+      color: #fff;
+      font-size: 24px; }
+    .register-section div p {
+      color: red; }
+    .register-section div .pwderror {
+      display: none; }
+    .register-section div .ok {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      display: none; }
+  .register-section .phonenumber {
+    width: 480px;
+    height: 73px; }
+    .register-section .phonenumber span {
+      color: #ccc;
+      font-size: 12px; }
+    .register-section .phonenumber #phone, .register-section .phonenumber .outCode {
+      width: 153px;
+      height: 50px;
+      border-color: 1px solid #ccc;
+      color: #ccc;
+      border-radius: 5px;
+      text-indent: 10px; }
+    .register-section .phonenumber #number, .register-section .phonenumber .getCode {
+      width: 320px;
+      margin-left: 5px; }
+    .register-section .phonenumber .getCode {
+      background: #3184ff;
+      font: 24px "微软雅黑";
+      color: #fff; }
+    .register-section .phonenumber .outCode {
+      box-sizing: border-box; }
+    .register-section .phonenumber .numError {
+      display: none;
+      font-size: 12px; }
+  .register-section .argeement {
+    width: 480px;
+    height: 40px;
+    position: relative;
+    color: #ccc;
+    font-size: 12px;
+    text-indent: 20px; }
+    .register-section .argeement img {
+      position: absolute;
+      bottom: 23px;
+      left: 2px; }
+    .register-section .argeement .downImg {
+      position: relative;
+      right: 0px;
+      bottom: 0px; }
+    .register-section .argeement .argeeCheck {
+      display: none; }
+
+.register-footer {
+  position: fixed;
+  bottom: 0;
+  right: 28%;
+  color: #ccc; }

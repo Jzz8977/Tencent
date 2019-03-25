@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/register.min.css">
+</head>
+<body>
+    <div class="register-logo"><img src="../img/register/logo.png" alt="">QQ</div>
+    <div class="register-bg">
+        <img src="../img/register/01-1.jpg" alt="哈喽">
+        <img src="../img/register/01-4.jpg" alt="哈喽">
+        <img src="../img/register/01-3.jpg" alt="哈喽">
+    </div>
+    <div class="register-tit">
+        <div>
+            <a href="javascript:;">意见反馈</a>
+        </div>
+        <div class="language">
+            <a href="javascript:;">简体中文</a>
+            <img src="../img/register/down.png" class="up"alt="">
+            <img src="../img/register/up.png"class="down" alt="">
+            <ul class="language-ul">
+                <li><a href="javascript:;">繁体中文</a></li>
+                <li><a href="javascript:;">English</a></li>
+            </ul>
+        </div>
+        <div class="email">
+            <img src="../img/register/mail-entry.png" alt="">
+           <a href="javascript:;">邮箱账号</a> 
+        </div>
+        <div class="logo3">
+            <img src="../img/register/logo3.png" alt="">
+            <a href="javascript:;">QQ靓号</a>
+        </div>
+    </div>
+    <div class="register-section">
+        <h1>欢迎注册QQ</h1>
+        <h2>每一天,乐在沟通。<a href="javascript:;">免费靓号</a></h2>
+        <div>
+            <input type="text" placeholder="昵称" id="userName"><img class="ok" src="../img/register/tick.png" alt="">
+            <p><img class="nameerror" src="../img/register/error.png" >昵称不可以为空</p>
+        </div>
+        <div>
+            <input type="password" placeholder="密码" id="userpwd"><img class="ok" src="../img/register/tick.png" alt="">
+            <p class="pwderror"><img  src="../img/register/error.png" >密码格式错误</p>
+            <p class="spaceError"><img src="../img/register/info.png" alt="">不能包括空格</p>
+            <p class="lengthError"><img src="../img/register/info.png" alt="">长度为8-16个字符</p>
+            <p class="typeError"><img src="../img/register/info.png" alt="">必须包含字母、数字、符号中至少2种</p>
+            
+        </div>
+        <div class="phonenumber">
+            <select name="phone" id="phone" class="left">
+                <option value="86">中国 +86</option>
+                <option value="852">中国香港特别行政区 +852</option>
+                <option value="886">中国台湾地区 +886</option>
+            </select>
+            <input type="text" name="number"class="left" id="number" placeholder="手机号码">
+            <img class="ok" src="../img/register/tick.png" alt="">
+            <p class="numError"><img  src="../img/register/error.png" >手机号错误</p>
+            <span>可通过手机号找回密码</span>
+            <p class="register-code"><input type="text" class="outCode left" value="验证码"><input type="button" class="getCode right" value="发送短信验证码"></p>
+        </div>    
+        <div>
+            <input type="button" class="register-btn" value="立即注册">
+        </div>
+        <div class="argeement">
+            <img class="argeeNormal" src="../img/register/checkbox_normal.png">
+            <img class="argeeCheck" src="../img/register/checkbox_check.png" alt=""> 
+            我已阅读并同意相关服务条款和隐私政策 <img class="downImg"src="../img/register/down.png" alt=""></p>
+        </div>
+    </div>
+    <p class="register-footer">Copyright © 1998-2019Tencent All Rights Reserved</p>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../../src/ES5JS/register.js"></script>
+</body>
+</html>  
