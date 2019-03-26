@@ -432,6 +432,7 @@ nav {
       top: 0;
       cursor: pointer; }
       nav .navbox li a {
+        color: #cedee7;
         text-decoration: none; }
       nav .navbox li .new {
         float: right;
@@ -449,6 +450,8 @@ nav {
         z-index: 333; }
         nav .navbox li > .nav-active li {
           background: #fff; }
+          nav .navbox li > .nav-active li a {
+            color: #000; }
         nav .navbox li > .nav-active > li:hover a {
           color: #f74a4a;
           text-decoration: none; }

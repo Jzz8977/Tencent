@@ -21,6 +21,7 @@ $(function(){
         $(this).css({background:'#f55656',color:'#fff'}).children('div').css('display','none');
 	});
 	
+	
 	$('#game .game-section-middle li').not(".game-section-middle-minh").mouseenter(function(){
 		$(this).animate({paddingLeft:25},100);
 	})
@@ -173,6 +174,30 @@ $(function(){
 
 $(function(){
 	$(".shop").click(function(){
+		
 		location.href = "dist/html/shop.html";
 	})
 })
+
+
+//shop
+$(function(){
+	//    $('#shop-top').load('header.html');
+	//    $('#shop-top').load('header.html');
+	   $("#shop-bottom").load('footer.html');
+	   
+	   //列表页
+	   $('.navbox-firstli').mouseenter(function(){
+		   $(this).children('.navbox-firstli-ul').css("display","block");
+	   })
+	   $('.navbox-firstli').mouseleave(function(){
+		$(this).children('.navbox-firstli-ul').css("display","none");
+	})
+	   $('.navbox-firstli-ul>li:not(.navbox-firstli-ul-firstli)').mouseenter(function(){
+		$(this).css({background:'#fff',color:'#f55656'}).children('div').css('display','block');
+	   })
+	   $('.navbox-firstli-ul>li').mouseleave(function(){
+        $(this).css({background:'#f55656',color:'#fff'}).children('div').css('display','none');
+	});
+})
+	

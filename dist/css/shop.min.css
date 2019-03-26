@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  position: relative; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+a:hover {
+  text-decoration: underline; }
+
+.mid {
+  width: 1190px;
+  margin: 0 auto; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.bg {
+  background: url(../img/icon.png) no-repeat; }
+
+.block {
+  display: block; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(230, 245, 255, 0.7);
+  border: 1px solid #ccc;
+  z-index: 999; }
+  .mark .float {
+    width: 620px;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    left: 36%;
+    top: 21%;
+    text-align: center; }
+    .mark .float h5 {
+      color: #333333;
+      width: 100%;
+      font-size: 20px;
+      line-height: 50px;
+      font-style: normal;
+      margin-top: 30px; }
+    .mark .float span {
+      display: block;
+      width: 100%;
+      line-height: 40px;
+      color: #666666;
+      font-size: 16px; }
+      .mark .float span .quick {
+        color: #3481cf;
+        cursor: pointer; }
+    .mark .float p {
+      margin: 10px 0;
+      width: 100%; }
+      .mark .float p input {
+        width: 270px;
+        height: 39px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-indent: 10px; }
+      .mark .float p #sbtn {
+        background: #86ce2f;
+        border-radius: 0;
+        color: #fff;
+        cursor: pointer; }
+    .mark .float .res {
+      position: absolute;
+      bottom: 15px;
+      right: 5px;
+      width: 284px; }
+      .mark .float .res b {
+        float: left;
+        font-weight: normal;
+        font-size: 12px;
+        cursor: pointer; }
+      .mark .float .res i {
+        float: left;
+        font-style: normal;
+        font-size: 12px;
+        color: #333;
+        margin: 0 20px; }
+    .mark .float .close {
+      display: block;
+      width: 40px;
+      height: 35px;
+      font-size: 40px;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      text-decoration: none; }
+    .mark .float .close:hover {
+      background: linear-gradient(to bottom, #ff4242, #ff9e9e); }
+
+nav div .navbox .navbox-firstli {
+  position: relative; }
+  nav div .navbox .navbox-firstli .menu {
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    background-position: 0 -16px;
+    top: 15px;
+    right: 15px; }
+  nav div .navbox .navbox-firstli li .nav-active {
+    display: none;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    z-index: 333; }
+    nav div .navbox .navbox-firstli li .nav-active li {
+      background: #fff; }
+      nav div .navbox .navbox-firstli li .nav-active li a {
+        color: #000 !important; }
+    nav div .navbox .navbox-firstli li .nav-active > li:hover a {
+      color: #f74a4a;
+      text-decoration: none; }
+  nav div .navbox .navbox-firstli .navbox-firstli-ul {
+    display: none;
+    width: 190px;
+    height: 384px;
+    background: #f55656;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 333; }
+    nav div .navbox .navbox-firstli .navbox-firstli-ul > li {
+      box-sizing: border-box;
+      width: 190px;
+      height: 65px;
+      background: #f55656;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      border-bottom: 1px solid #ee4545;
+      cursor: pointer;
+      text-indent: -30px; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .navbox-firstli-ul-hide {
+        display: none;
+        height: 330px;
+        background: #fff;
+        position: absolute;
+        left: 190px;
+        top: 0;
+        border: 1px solid #ccc;
+        border-left: 0;
+        z-index: 333; }
+        nav div .navbox .navbox-firstli .navbox-firstli-ul > li .navbox-firstli-ul-hide div {
+          float: left;
+          width: 125px;
+          height: 100%;
+          border-right: 1px solid #ccc; }
+          nav div .navbox .navbox-firstli .navbox-firstli-ul > li .navbox-firstli-ul-hide div a {
+            width: 60px;
+            height: 35px;
+            font-size: 14px;
+            display: block;
+            line-height: 35px;
+            padding: 0 15px;
+            margin-left: 25px;
+            color: #000; }
+          nav div .navbox .navbox-firstli .navbox-firstli-ul > li .navbox-firstli-ul-hide div a:hover {
+            color: #f55656; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .pos1 {
+        top: 0;
+        width: 252px; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .pos2 {
+        top: -65px;
+        width: 378px; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .pos3 {
+        top: -130px;
+        width: 252px; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .pos4 {
+        top: -195px;
+        width: 125px; }
+      nav div .navbox .navbox-firstli .navbox-firstli-ul > li .pos5 {
+        top: -260px; }
+    nav div .navbox .navbox-firstli .navbox-firstli-ul .navbox-firstli-ul-firstli {
+      height: 54px;
+      line-height: 34px;
+      padding: 10px 20px; }
+    nav div .navbox .navbox-firstli .navbox-firstli-ul .navbox-firstli-ul-lastli {
+      border-bottom: 0;
+      height: 70px; }
+    nav div .navbox .navbox-firstli .navbox-firstli-ul .iconfont {
+      margin-right: 5px; }
+
+nav div .navbox .shopp {
+  background: #f74a4a; }
+
+#shop-section {
+  height: 900px;
+  background: #f5f5f5; }

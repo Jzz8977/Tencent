@@ -1,0 +1,144 @@
+@import "public";
+
+nav{
+    div{
+        .navbox{
+            .navbox-firstli{
+                position: relative;
+                .menu{
+                    position: absolute;
+                    width: 20px;
+                    height:17px;
+                    background-position: 0 -16px;
+                    top: 15px;
+                    right: 15px;
+                }
+                li{
+                    .nav-active{
+                        display: none;
+                        color: #000;
+                        @include pos(absolute,0,54px);
+                        z-index: 333;
+                        li{
+                            background: #fff;
+                            a{
+                                color: #000!important;
+                            }
+                        }
+                        
+                        &>li:hover a{
+                            color:#f74a4a;
+                            text-decoration: none;
+                        }
+                    }
+                
+                }
+                
+                .navbox-firstli-ul{
+                    display: none;
+                        @include size(190px,384px,#f55656);
+                        // @include pos(absolute,0,-54px);
+                        position: absolute;
+                        left: 0;
+                        top:0;
+
+                        z-index: 333;
+                        &>li{
+                            box-sizing: border-box;
+                            // padding:20px;
+                            @include size(190px,65px,#f55656);
+                            position: relative;
+                            // line-height: 65px;
+                            text-align: center;
+                            color: #fff;    
+                            // font-weight: 600;
+                            border-bottom: 1px solid #ee4545;
+                            cursor: pointer;
+                            text-indent: -30px;
+                            .navbox-firstli-ul-hide{
+                                display: none;
+                                // @include size(252px,330px,#fff);
+                                height: 330px;
+                                background:#fff;
+                                @include pos(absolute,190px,0);
+                                border : 1px solid #ccc;
+                                border-left:0;
+                                z-index:333; 
+                                div{
+                                    // border:1px solid #ccc;
+                                    float: left;
+                                    width: 125px;
+                                    height:100%;
+                                    border-right: 1px solid #ccc;
+                                    a{
+                                        // box-sizing: border-box;
+                                        width: 60px;
+                                        height:35px;
+                                        font-size: 14px;
+                                        display: block;
+                                        line-height: 35px;
+                                        // text-align: center;
+                                        padding: 0 15px;
+                                        margin-left:25px;
+                                        color: #000;
+                                    }
+                                    a:hover{
+                                        color:#f55656;
+                                    }
+                                } 
+                                
+                            }
+                            & .pos1{
+                                top:0;
+                                width: 252px;
+                            }
+                            & .pos2{
+                                top: -65px;
+                                width: 378px;
+                            }
+                            & .pos3{
+                                top: -130px;
+                                width: 252px;
+                            }
+                            & .pos4{
+                                top:-195px;
+                                width: 125px;
+                            }
+                            & .pos5{
+                                top:-260px;
+                            }
+                        }
+                        .navbox-firstli-ul-firstli{
+                            height:54px;
+                            // opacity: 0.7;
+                            line-height: 34px;
+                            padding:10px 20px;
+                            // position: relative;
+            
+                            // cursor: none;
+                            // text-indent: 0;
+                            // z-index: 333;
+                        }
+                        .navbox-firstli-ul-lastli{
+                            border-bottom: 0;
+                            height:70px;
+                            
+                        }
+                        .iconfont{
+                            margin-right: 5px;
+                        }
+                }
+            }
+            .shopp{
+                background:#f74a4a;
+            }
+        }
+          
+            
+    }
+}
+
+#shop-section{
+    height:900px;
+    background: #f5f5f5 ;
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shop.min.css">
+    <style>
+        #header-top {
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+  width: 100%;
+  height: 31px;
+  background: #f9f9f9;
+  border-top: 1px solid #b6b4b6; }
+  #header-top .header-top {
+    height: 30px; }
+    #header-top .header-top .header-top-left {
+      width: 310px;
+      height: 30px;
+      background: #f9f9f9; }
+      #header-top .header-top .header-top-left a {
+        color: #666;
+        float: left; }
+        #header-top .header-top .header-top-left a s {
+          float: left;
+          width: 11px;
+          height: 30px;
+          background-position: 0 8px; }
+      #header-top .header-top .header-top-left a:hover {
+        color: #f74a4a; }
+      #header-top .header-top .header-top-left i {
+        color: #666;
+        font-style: normal;
+        float: left;
+        margin: 0 10px; }
+    #header-top .header-top .header-top-right {
+      width: 500px;
+      height: 30px;
+      background: #f9f9f9; }
+      #header-top .header-top .header-top-right a {
+        color: #666;
+        float: right; }
+        #header-top .header-top .header-top-right a s {
+          float: right;
+          width: 11px;
+          height: 18px;
+          background-position: 0 -48px; }
+      #header-top .header-top .header-top-right a:hover {
+        color: #f74a4a; }
+      #header-top .header-top .header-top-right i {
+        color: #666;
+        font-style: normal;
+        float: right;
+        margin: 0 10px; }
+      #header-top .header-top .header-top-right .BBS {
+        float: right;
+        position: relative; }
+        #header-top .header-top .header-top-right .BBS .BBS-a {
+          color: #666;
+          float: right; }
+        #header-top .header-top .header-top-right .BBS .BBS-a:hover {
+          color: #f74a4a; }
+        #header-top .header-top .header-top-right .BBS .BBS-on {
+          display: none;
+          text-align: center;
+          float: left;
+          width: 70px;
+          height: 59px;
+          background: #fff;
+          position: absolute;
+          left: 0px;
+          top: 0;
+          z-index: 1; }
+          #header-top .header-top .header-top-right .BBS .BBS-on .weibo {
+            display: block;
+            width: 75px;
+            text-align: center; }
+        #header-top .header-top .header-top-right .BBS .mark {
+          display: none;
+          width: 75px;
+          height: 60px;
+          background: #fff;
+          position: absolute;
+          left: -2px;
+          top: 0px;
+          border: 1px solid #666;
+          opacity: 1;
+          z-index: 1; }
+      #header-top .header-top .header-top-right .BBS:hover .BBS-on {
+        display: block; }
+      #header-top .header-top .header-top-right .BBS:hover .mark {
+        display: block; }
+      #header-top .header-top .header-top-right .game-index {
+        float: right;
+        position: relative; }
+        #header-top .header-top .header-top-right .game-index .game-index-a {
+          margin-top: 7px;
+          border: 1px solid #e7e8e7;
+          width: 60px;
+          height: 16px;
+          background: #fff;
+          line-height: 16px; }
+          #header-top .header-top .header-top-right .game-index .game-index-a s {
+            float: right;
+            width: 11px;
+            height: 18px;
+            background-position: 0 -20px; }
+        #header-top .header-top .header-top-right .game-index .game-table-hidden {
+          box-sizing: border-box;
+          display: none;
+          width: 825px;
+          height: 255px;
+          background: #e4e4e4;
+          border-radius: 1px;
+          position: absolute;
+          left: -765px;
+          top: 27px;
+          padding: 5px;
+          z-index: 999;
+          border: 1px solid #666; }
+          #header-top .header-top .header-top-right .game-index .game-table-hidden table {
+            box-sizing: border-box;
+            width: 810px;
+            height: 230px;
+            background: #fff;
+            border: 1px solid #666;
+            border-collapse: separate; }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table .th {
+              color: #00a3de;
+              font-weight: 600; }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table td {
+              border: 1px solid #ccc;
+              line-height: 30px;
+              text-indent: 5px;
+              background: linear-gradient(to bottom, white, white, #f8f8f8); }
+            #header-top .header-top .header-top-right .game-index .game-table-hidden table td:hover {
+              color: #00a3de; }
+      #header-top .header-top .header-top-right .game-index:hover {
+        height: 30px; }
+
+header {
+  height: 108px; }
+  header .logo {
+    width: 295px;
+    height: 75px;
+    background: #fff;
+    background: url(../img/header.png) no-repeat;
+    margin: 20px 0px;
+    cursor: pointer; }
+  header .search {
+    box-sizing: border-box;
+    border: 2px solid #f74a4a;
+    margin-left: 145px;
+    margin-top: 20px;
+    width: 486px;
+    height: 38px;
+    background: #f74a4a;
+    position: relative;
+    left: 0;
+    top: 0; }
+    header .search .search-tit {
+      text-align: center;
+      line-height: 36px;
+      width: 110px;
+      height: 32px;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+      border-right: 1px solid #ccc;
+      float: left;
+      text-decoration: none;
+      z-index: 33; }
+      header .search .search-tit s {
+        float: right;
+        margin-top: 3px;
+        width: 11px;
+        height: 16px;
+        background-position: 0 -48px; }
+      header .search .search-tit .search-game {
+        display: none;
+        width: 418px;
+        height: 369px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 36px;
+        z-index: 1;
+        border: 1px solid #ccc;
+        border-top: 0; }
+        header .search .search-tit .search-game .search-game-top {
+          width: 418px;
+          height: 150px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-top .search-game-top-left {
+            width: 80px;
+            height: 130px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-top .search-game-top-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 130px;
+            background: #fff;
+            color: #000; }
+            header .search .search-tit .search-game .search-game-top .search-game-top-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-top .search-game-top-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-middle {
+          clear: both;
+          border-bottom: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          width: 418px;
+          height: 80px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-middle .search-game-middle-left {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-middle .search-game-middle-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 80px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-bottom {
+          clear: both;
+          border-bottom: 1px solid #ccc;
+          width: 418px;
+          height: 35px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-left {
+            width: 80px;
+            height: 35px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 35px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+        header .search .search-tit .search-game .search-game-footer {
+          clear: both;
+          width: 418px;
+          height: 100px;
+          background: #fff; }
+          header .search .search-tit .search-game .search-game-footer .search-game-footer-left {
+            width: 80px;
+            height: 100px;
+            background: #fff;
+            color: #000;
+            font-weight: 600; }
+          header .search .search-tit .search-game .search-game-footer .search-game-footer-right {
+            float: right;
+            font-size: 12px;
+            width: 300px;
+            height: 100px;
+            background: #fff;
+            color: #1b0e0e; }
+            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > a {
+              float: left; }
+            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > i {
+              float: left;
+              font-style: normal;
+              margin: 0 5px; }
+    header .search .search-tit:hover {
+      height: 38px; }
+    header .search .search-tit:hover .search-game {
+      display: block; }
+    header .search .search-txt {
+      border: 0;
+      width: 330px;
+      height: 34px;
+      background: #fff;
+      text-indent: 5px;
+      float: left; }
+    header .search .search-btn {
+      width: 38px;
+      height: 35px;
+      background: #f74a4a;
+      float: right;
+      border: 0;
+      border-bottom: 3px solid #e43333;
+      background-image: url(../img/search-btn.png); }
+    header .search .mar {
+      margin-right: 25px; }
+
+nav {
+  width: 100%;
+  height: 54px;
+  background: #3a3f4a;
+  clear: both; }
+  nav .navbox {
+    color: #acb1bb;
+    height: 54px;
+    line-height: 54px; }
+    nav .navbox li {
+      width: 128px;
+      text-align: center;
+      float: left;
+      position: relative;
+      left: 0;
+      top: 0;
+      cursor: pointer; }
+      nav .navbox li a {
+        text-decoration: none; }
+      nav .navbox li .new {
+        float: right;
+        width: 20px;
+        height: 17px;
+        margin-top: 23px;
+        margin-right: 10px;
+        background: url(../img/newtips.png) no-repeat; }
+      nav .navbox li > .nav-active {
+        display: none;
+        color: #000;
+        position: absolute;
+        left: 0;
+        top: 54px;
+        z-index: 333; }
+        nav .navbox li > .nav-active li {
+          background: #fff; }
+        nav .navbox li > .nav-active > li:hover a {
+          color: #f74a4a;
+          text-decoration: none; }
+    nav .navbox .navbox-firstli {
+      width: 190px; }
+    nav .navbox li:hover {
+      background: #f55656; }
+    li:hover nav .navbox > li > a {
+      color: #fff;
+      text-decoration: none; }
+    nav .navbox li:hover .nav-active {
+      display: block;
+      color: #000; }
+    nav .navbox .cart {
+      width: 230px;
+      height: 43px;
+      background: #f55656;
+      margin-top: 5px;
+      margin-left: 0px;
+      line-height: 43px;
+      cursor: pointer; }
+      nav .navbox .cart a {
+        color: #fff;
+        float: left;
+        margin-left: 40px; }
+        nav .navbox .cart a .cart-ic {
+          color: #fff;
+          float: left;
+          margin-top: 14px;
+          margin-right: 10px;
+          width: 21px;
+          height: 16px;
+          background-position: -60px -20px; }
+      nav .navbox .cart i {
+        font-style: normal;
+        margin: 0 30px;
+        float: right;
+        color: #fff; }
+      nav .navbox .cart b {
+        float: right;
+        color: #fff;
+        margin-right: 20px; }
+
+    </style>
+</head>
+<body>
+        <div id="header-top">
+                <div class="mid header-top">
+                    <!--左侧-->
+                    <div class="left header-top-left">
+                        <a href="javascript:;">
+                        <s class="bg"></s>
+                            手机版
+                        </a>
+                        <i>|</i>
+                        <a href="javascript:;">游戏币交易</a>
+                        <i>|</i>
+                        <a href="javascript:;">Q币充值</a>
+                        <i>|</i>
+                        <a href="javascript:;">心悦游戏家</a>
+                    </div>
+                    <!--右侧-->
+                    <div class="right header-top-right">
+                        <div class="game-index">
+                            <a href="javascript:;" class="game-index-a">
+                                游戏导航
+                                <s class="bg"></s>
+                            </a>
+                            <div class="game-table-hidden">
+                                <table>
+                                    <tr class="th">
+                                        <td colspan="3"><span>角色扮演(21)</span></td>
+                                        
+                                        <td colspan="2"><span>竞技游戏(10)</span></td>
+                                        
+                                        <td><span>休闲游戏(3)</span></td>
+                                        <td colspan="2"><span>网页游戏(8)</span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>冒险岛2</td>
+                                        <td>QQ幻想</td>
+                                        <td>天堂</td>
+                                        <td>使命召唤</td>
+                                        <td>FIFA Online3</td>
+                                        <td>炫舞时代</td>
+                                        <td>英魂之刃</td>
+                                        <td>猎鱼达人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>御龙在天经典版</td>
+                                        <td>刀剑2</td>
+                                        <td>幻想世界</td>
+                                        <td>英雄联盟<s></s></td>
+                                        <td>战争雷霆</td>
+                                        <td>QQ炫舞</td>
+                                        <td>火影忍者OL</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>怪物猎人OL</td>
+                                        <td>寻仙</td>
+                                        <td>QQ仙侠传</td>
+                                        <td>穿越火线<s></s></td>
+                                        <td>极品飞车OL</td>
+                                        <td>QQ飞车<s></s></td>
+                                        <td>夜店之王</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>天涯明月刀<s></s></td>
+                                        <td>斗战神</td>
+                                        <td>地下城勇士<s></s></td>
+                                        <td>逆战</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>部落守卫战</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>上古世纪</td>
+                                        <td>轩辕传奇</td>
+                                        <td>QQ三国</td>
+                                        <td>NBA2KOL</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>Q宠大乐斗</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>疾风之刃</td>
+                                        <td>天堂2</td>
+                                        <td>自由幻想</td>
+                                        <td>战争之王</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>七雄争霸</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <i>|</i>
+                        <a href="javascript:;">帮助中心</a>
+                        <i>|</i>
+                        <div class="BBS">
+                            <a href="javascript:;" class="BBS-a">
+                                官方论坛
+                                <s class="bg"></s>
+                            </a>
+                            <div class="mark"></div>
+                            <div class="BBS-on">
+                                <a href="javascript:;">
+                                官方论坛
+                                <s class="bg"></s>
+                            </a>
+                            <a class="weibo" href="javascript:;">官方微博</a>
+                            </div>
+                        </div>					
+                        <i>|</i>
+                         <a href="javascript:;">个人中心</a>
+                         <i>|</i>
+                        <span class="right register-login">您还未登录，请<a href="javascript:;" class="login">登录</a></span>
+                    </div>
+                </div>
+            </div>
+            <header class="mid">
+                <div class="logo left">
+                    <!--<img src="dist/img/header.png" alt="" />-->
+                </div>
+                <form action="" class="search left">
+                    <div class="search-tit">
+                        <span>
+                            选择游戏
+                        </span>
+                        <s class="bg"></s>
+                        <div  class="search-game">
+                            <!-- 头部 -->
+                            <div class="search-game-top">
+                                <!-- 左 -->
+                                <div class="search-game-top-left  left">
+                                    角色扮演:
+                                </div>
+                                <!-- 右 -->
+                                <div class="search-game-top-right">
+                                    <a href="javascript:;">怪物猎人OL</a><i>|</i>
+                                    <a href="javascript:;">QQ仙灵</a><i>|</i>
+                                    <a href="javascript:;">天涯明月刀</a><i>|</i>
+                                    <a href="javascript:;">上古世纪</a><i>|</i>
+                                    <a href="javascript:;">斗战神</a><i>|</i>
+                                    <a href="javascript:;">轩辕传奇</a><i>|</i>
+                                    <a href="javascript:;">寻仙</a><i>|</i>
+                                    <a href="javascript:;">剑灵</a><i>|</i>
+                                    <a href="javascript:;">天堂2</a><i>|</i>
+                                    <a href="javascript:;">天堂</a><i>|</i>
+                                    <a href="javascript:;">幻想世界</a><i>|</i>
+                                    <a href="javascript:;">QQ仙侠传</a><i>|</i>
+                                    <a href="javascript:;">第九大陆</a><i>|</i>
+                                    <a href="javascript:;">地下城和勇士</a><i>|</i>
+                                    <a href="javascript:;">QQ三国</a><i>|</i>
+                                    <a href="javascript:;">御龙在天</a><i>|</i>
+                                    <a href="javascript:;">御龙在天经典版</a><i>|</i>
+                                    <a href="javascript:;">自由幻想</a><i>|</i>
+                                    <a href="javascript:;">QQ幻想</a><i>|</i>
+                                    <a href="javascript:;">刀剑2</a><i>|</i>
+                                    <a href="javascript:;">疾风之刃</a>
+                                </div>
+                            </div>
+                            <!-- 中部 -->
+                            <div class="search-game-middle">
+                                <!-- 左 -->
+                                <div class="search-game-middle-left left">
+                                    竞技游戏:
+                                </div>
+                                <!-- 右 -->
+                                <div class="search-game-middle-right">
+                                    <a href="javascript:;">极品飞车OL</a><i>|</i>
+                                    <a href="javascript:;">战争雷霆</a><i>|</i>
+                                    <a href="javascript:;">使命召唤codol</a><i>|</i>
+                                    <a href="javascript:;">英雄联盟</a><i>|</i>
+                                    <a href="javascript:;">逆战</a><i>|</i>
+                                    <a href="javascript:;">穿越火线</a><i>|</i>
+                                    <a href="javascript:;">NBA2KOL</a><i>|</i>
+                                    <a href="javascript:;">战地之王</a><i>|</i>
+                                    <a href="javascript:;">枪神纪</a><i>|</i>
+                                    <a href="javascript:;">FIFA Online3</a>
+                                        
+                                </div>
+                            </div>
+                            <!-- 底部 -->
+                            <div class="search-game-bottom">
+                                <!-- 左 -->
+                                <div class="search-game-bottom-left left">
+                                    休闲游戏:
+                                </div>
+                                <div class="search-game-bottom-right">
+                                    <a href="javascript:;">QQ炫舞</a><i>|</i>
+                                    <a href="javascript:;">炫舞时代</a><i>|</i>
+                                    <a href="javascript:;">QQ飞车</a>
+                                </div>
+                            </div>
+                            <!-- footer -->
+                            <div class="search-game-footer">
+                                <!-- 左 -->
+                                <div class="search-game-footer-left left">
+                                    网页游戏:
+                                </div>
+                                <div class="search-game-footer-right">
+                                    <a href="javascript:;">猎鱼达人3D</a><i>|</i>
+                                    <a href="javascript:;">夜店之王</a><i>|</i>
+                                    <a href="javascript:;">部落守卫战</a><i>|</i>
+                                    <a href="javascript:;">Q宠大乐斗</a><i>|</i>
+                                    <a href="javascript:;">烽火战国</a><i>|</i>
+                                    <a href="javascript:;">七雄争霸</a><i>|</i>
+                                    <a href="javascript:;">火影忍者OL</a><i>|</i>
+                                    <a href="javascript:;">英魂之刃</a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" class="search-txt"name="search" id="search" value="" placeholder="请选择游戏搜索道具"/>
+                    <input type="button" class="search-btn"/>
+                </form>
+                <img class="right mar"src="dist/img/header-code.png" alt="" />
+                <a href="javascript:;" class="right "><img src="dist/img/header-redcap.png" alt="app下载" /></a>
+            </header>
+            
+            <nav>
+                <div class="mid">
+                    <ul class="navbox">
+                        <li class="navbox-firstli"><a href="javascript:;"><s class="bg menu"></s>所有游戏分类</a></li>
+                        <li><a href="javascript:;">首页</a></li>
+                        <li>
+                            <a href="javascript:;">活动中心</a>
+                            <ul class="nav-active">
+                                <li><a href="javascript:;">闪购专区</a></li>
+                                <li><a href="javascript:;">淘宝贝</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">聚诚品<s class="new"></s></a></li>
+                        <li><a href="javascript:;">手游中心</a></li>
+                        <li><a href="javascript:;" class="shop">聚豆商城</a></li>
+                        <li><a href="javascript:;">个人中心</a></li>
+                        <li class="cart">
+                            <a href="javascript:;">
+                                <s class="bg cart-ic"></s>
+                                购物车
+                            </a>
+                            <b>0</b><i>|</i>
+                            <div class="cart-on">
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+</body>
+</html>

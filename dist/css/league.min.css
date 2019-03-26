@@ -113,306 +113,246 @@ a:hover {
       background: linear-gradient(to bottom, #ff4242, #ff9e9e); }
 
 body {
-  background: url(../img/bg-index.jpg) no-repeat;
+  background: url(../img/bg-index.jpg) no-repeat center;
   background-size: 100%; }
 
-#header-top {
-  line-height: 30px;
-  font-size: 12px;
-  width: 100%;
-  height: 31px;
-  background: #191c25;
-  border-top: 1px solid #b6b4b6; }
-  #header-top .header-top {
-    height: 30px; }
-    #header-top .header-top .header-top-left {
-      width: 310px;
+#wrap-all {
+  background: url(../img/cont-index.jpg) no-repeat 0 -1px;
+  background-size: 100%;
+  width: 1190px;
+  height: 1000px;
+  margin: 0 auto; }
+  #wrap-all #header-top {
+    line-height: 30px;
+    font-size: 12px;
+    width: 100%;
+    height: 31px;
+    border-top: 1px solid #b6b4b6; }
+    #wrap-all #header-top .header-top {
+      height: 30px; }
+      #wrap-all #header-top .header-top .header-top-left {
+        width: 310px;
+        height: 30px;
+        background: #191c25; }
+        #wrap-all #header-top .header-top .header-top-left a {
+          color: 9f9f9f;
+          float: left; }
+          #wrap-all #header-top .header-top .header-top-left a s {
+            float: left;
+            width: 11px;
+            height: 30px;
+            background-position: 0 6px; }
+        #wrap-all #header-top .header-top .header-top-left i {
+          color: #666;
+          font-style: normal;
+          float: left;
+          margin: 0 10px; }
+    #wrap-all #header-top .header-top-right {
+      width: 500px;
       height: 30px;
       background: #191c25; }
-      #header-top .header-top .header-top-left a {
-        color: 9f9f9f;
-        float: left; }
-        #header-top .header-top .header-top-left a s {
-          float: left;
-          width: 11px;
-          height: 30px;
-          background-position: 0 6px; }
-      #header-top .header-top .header-top-left i {
-        color: #666;
-        font-style: normal;
-        float: left;
-        margin: 0 10px; }
-  #header-top .header-top-right {
-    width: 500px;
-    height: 30px;
-    background: #191c25; }
-    #header-top .header-top-right a {
-      color: #666;
-      float: right; }
-      #header-top .header-top-right a s {
-        float: right;
-        width: 11px;
-        height: 18px;
-        background-position: 0 -48px; }
-    #header-top .header-top-right a:hover {
-      color: #f74a4a; }
-    #header-top .header-top-right i {
-      color: #666;
-      font-style: normal;
-      float: right;
-      margin: 0 10px; }
-    #header-top .header-top-right .BBS {
-      float: right;
-      position: relative; }
-      #header-top .header-top-right .BBS .BBS-a {
+      #wrap-all #header-top .header-top-right a {
         color: #666;
         float: right; }
-      #header-top .header-top-right .BBS .BBS-a:hover {
-        color: #f74a4a; }
-      #header-top .header-top-right .BBS .BBS-on {
-        display: none;
-        text-align: center;
-        float: left;
-        width: 70px;
-        height: 59px;
-        background: #191c25;
-        position: absolute;
-        left: 0px;
-        top: 0;
-        z-index: 1; }
-        #header-top .header-top-right .BBS .BBS-on .weibo {
-          display: block;
-          width: 75px;
-          text-align: center; }
-      #header-top .header-top-right .BBS .mark {
-        display: none;
-        width: 75px;
-        height: 60px;
-        background: #191c25;
-        position: absolute;
-        left: -2px;
-        top: 0px;
-        border: 1px solid #666;
-        opacity: 1;
-        z-index: 1; }
-    #header-top .header-top-right .BBS:hover .BBS-on {
-      display: block; }
-    #header-top .header-top-right .BBS:hover .mark {
-      display: block; }
-    #header-top .header-top-right .game-index {
-      float: right;
-      position: relative; }
-      #header-top .header-top-right .game-index .game-index-a {
-        margin-top: 7px;
-        border: 1px solid #303234;
-        width: 70px;
-        height: 16px;
-        background: #191c25;
-        line-height: 16px; }
-        #header-top .header-top-right .game-index .game-index-a s {
+        #wrap-all #header-top .header-top-right a s {
           float: right;
           width: 11px;
           height: 18px;
-          background-position: 0 -20px; }
-      #header-top .header-top-right .game-index .game-table-hidden {
-        box-sizing: border-box;
-        display: none;
-        width: 825px;
-        height: 255px;
-        background: #e4e4e4;
-        border-radius: 1px;
-        position: absolute;
-        left: -765px;
-        top: 27px;
-        padding: 5px;
-        z-index: 999;
-        border: 1px solid #666; }
-        #header-top .header-top-right .game-index .game-table-hidden table {
-          box-sizing: border-box;
-          width: 810px;
-          height: 230px;
-          background: #fff;
-          border: 1px solid #666;
-          border-collapse: separate; }
-          #header-top .header-top-right .game-index .game-table-hidden table .th {
-            color: #00a3de;
-            font-weight: 600; }
-          #header-top .header-top-right .game-index .game-table-hidden table td {
-            border: 1px solid #ccc;
-            line-height: 30px;
-            text-indent: 5px;
-            background: linear-gradient(to bottom, white, white, #f8f8f8); }
-          #header-top .header-top-right .game-index .game-table-hidden table td:hover {
-            color: #00a3de; }
-    #header-top .header-top-right .game-index:hover {
-      height: 30px; }
-
-header {
-  height: 108px; }
-  header .logo {
-    width: 295px;
-    height: 75px;
-    background: url(../img/header.png) no-repeat;
-    margin: 20px 0px;
-    cursor: pointer; }
-  header .search {
-    box-sizing: border-box;
-    border: 2px solid #f74a4a;
-    margin-left: 145px;
-    margin-top: 20px;
-    width: 486px;
-    height: 38px;
-    background: #f74a4a;
-    position: relative;
-    left: 0;
-    top: 0; }
-    header .search .search-tit {
-      text-align: center;
-      line-height: 36px;
-      width: 110px;
-      height: 32px;
-      background: #fff;
-      border-bottom: 2px solid #ccc;
-      border-right: 1px solid #ccc;
-      float: left;
-      text-decoration: none;
-      z-index: 33; }
-      header .search .search-tit s {
+          background-position: 0 -48px; }
+      #wrap-all #header-top .header-top-right a:hover {
+        color: #f74a4a; }
+      #wrap-all #header-top .header-top-right i {
+        color: #666;
+        font-style: normal;
         float: right;
-        margin-top: 3px;
-        width: 11px;
-        height: 16px;
-        background-position: 0 -48px; }
-      header .search .search-tit .search-game {
-        display: none;
-        width: 418px;
-        height: 369px;
-        background: #fff;
+        margin: 0 10px; }
+      #wrap-all #header-top .header-top-right .BBS {
+        float: right;
+        position: relative; }
+        #wrap-all #header-top .header-top-right .BBS .BBS-a {
+          color: #666;
+          float: right; }
+        #wrap-all #header-top .header-top-right .BBS .BBS-a:hover {
+          color: #f74a4a; }
+        #wrap-all #header-top .header-top-right .BBS .BBS-on {
+          display: none;
+          text-align: center;
+          float: left;
+          width: 70px;
+          height: 59px;
+          background: #191c25;
+          position: absolute;
+          left: 0px;
+          top: 0;
+          z-index: 1; }
+          #wrap-all #header-top .header-top-right .BBS .BBS-on .weibo {
+            display: block;
+            width: 75px;
+            text-align: center; }
+        #wrap-all #header-top .header-top-right .BBS .mark {
+          display: none;
+          width: 75px;
+          height: 60px;
+          background: #191c25;
+          position: absolute;
+          left: -2px;
+          top: 0px;
+          border: 1px solid #666;
+          opacity: 1;
+          z-index: 1; }
+      #wrap-all #header-top .header-top-right .BBS:hover .BBS-on {
+        display: block; }
+      #wrap-all #header-top .header-top-right .BBS:hover .mark {
+        display: block; }
+      #wrap-all #header-top .header-top-right .game-index {
+        float: right;
+        position: relative; }
+        #wrap-all #header-top .header-top-right .game-index .game-index-a {
+          margin-top: 7px;
+          border: 1px solid #303234;
+          width: 70px;
+          height: 16px;
+          background: #191c25;
+          line-height: 16px; }
+          #wrap-all #header-top .header-top-right .game-index .game-index-a s {
+            float: right;
+            width: 11px;
+            height: 18px;
+            background-position: 0 -20px; }
+        #wrap-all #header-top .header-top-right .game-index .game-table-hidden {
+          box-sizing: border-box;
+          display: none;
+          width: 825px;
+          height: 255px;
+          background: #e4e4e4;
+          border-radius: 1px;
+          position: absolute;
+          left: -765px;
+          top: 27px;
+          padding: 5px;
+          z-index: 999;
+          border: 1px solid #666; }
+          #wrap-all #header-top .header-top-right .game-index .game-table-hidden table {
+            box-sizing: border-box;
+            width: 810px;
+            height: 230px;
+            background: #fff;
+            border: 1px solid #666;
+            border-collapse: separate; }
+            #wrap-all #header-top .header-top-right .game-index .game-table-hidden table .th {
+              color: #00a3de;
+              font-weight: 600; }
+            #wrap-all #header-top .header-top-right .game-index .game-table-hidden table td {
+              border: 1px solid #ccc;
+              line-height: 30px;
+              text-indent: 5px;
+              background: linear-gradient(to bottom, white, white, #f8f8f8); }
+            #wrap-all #header-top .header-top-right .game-index .game-table-hidden table td:hover {
+              color: #00a3de; }
+      #wrap-all #header-top .header-top-right .game-index:hover {
+        height: 30px; }
+  #wrap-all header {
+    height: 93px; }
+    #wrap-all header .logo {
+      width: 295px;
+      height: 75px;
+      background: url(../img/navico.png) no-repeat -664px 0;
+      margin: 10px 0px;
+      cursor: pointer; }
+    #wrap-all header .search {
+      box-sizing: border-box;
+      margin-left: 145px;
+      margin-top: 20px;
+      width: 521px;
+      height: 49px;
+      position: relative;
+      left: 0;
+      top: 0; }
+      #wrap-all header .search .search-txt {
+        border: 0;
+        width: 521px;
+        height: 50px;
+        text-indent: 5px;
+        float: left;
+        background: url(../img/navico.png) no-repeat -1000px 0; }
+      #wrap-all header .search .search-btn {
+        width: 48px;
+        height: 45px;
         position: absolute;
+        top: 2px;
+        right: 0;
+        border: 0;
+        background: url(../img/navico.png) no-repeat -1560px 0; }
+      #wrap-all header .search .mar {
+        margin-right: 25px; }
+    #wrap-all header .logo2 {
+      background: url(../img/navico.png) no-repeat -458px 0;
+      width: 168px;
+      height: 68px;
+      margin-top: 15px;
+      margin-right: 30px; }
+  #wrap-all nav {
+    width: 100%;
+    height: 75px;
+    clear: both; }
+    #wrap-all nav .lol-navbox {
+      color: #acb1bb;
+      height: 75px;
+      line-height: 75px; }
+      #wrap-all nav .lol-navbox li {
+        width: 133px;
+        text-align: center;
+        float: left;
+        position: relative;
         left: 0;
-        top: 36px;
-        z-index: 1;
-        border: 1px solid #ccc;
-        border-top: 0; }
-        header .search .search-tit .search-game .search-game-top {
-          width: 418px;
-          height: 150px;
-          background: #fff; }
-          header .search .search-tit .search-game .search-game-top .search-game-top-left {
-            width: 80px;
-            height: 130px;
-            background: #fff;
-            color: #000;
-            font-weight: 600; }
-          header .search .search-tit .search-game .search-game-top .search-game-top-right {
-            float: right;
-            font-size: 12px;
-            width: 300px;
-            height: 130px;
-            background: #fff;
-            color: #000; }
-            header .search .search-tit .search-game .search-game-top .search-game-top-right > a {
-              float: left; }
-            header .search .search-tit .search-game .search-game-top .search-game-top-right > i {
-              float: left;
-              font-style: normal;
-              margin: 0 5px; }
-        header .search .search-tit .search-game .search-game-middle {
-          clear: both;
-          border-bottom: 1px solid #ccc;
-          border-top: 1px solid #ccc;
-          width: 418px;
-          height: 80px;
-          background: #fff; }
-          header .search .search-tit .search-game .search-game-middle .search-game-middle-left {
-            width: 80px;
-            height: 80px;
-            background: #fff;
-            color: #000;
-            font-weight: 600; }
-          header .search .search-tit .search-game .search-game-middle .search-game-middle-right {
-            float: right;
-            font-size: 12px;
-            width: 300px;
-            height: 80px;
-            background: #fff;
-            color: #1b0e0e; }
-            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > a {
-              float: left; }
-            header .search .search-tit .search-game .search-game-middle .search-game-middle-right > i {
-              float: left;
-              font-style: normal;
-              margin: 0 5px; }
-        header .search .search-tit .search-game .search-game-bottom {
-          clear: both;
-          border-bottom: 1px solid #ccc;
-          width: 418px;
-          height: 35px;
-          background: #fff; }
-          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-left {
-            width: 80px;
-            height: 35px;
-            background: #fff;
-            color: #000;
-            font-weight: 600; }
-          header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right {
-            float: right;
-            font-size: 12px;
-            width: 300px;
-            height: 35px;
-            background: #fff;
-            color: #1b0e0e; }
-            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > a {
-              float: left; }
-            header .search .search-tit .search-game .search-game-bottom .search-game-bottom-right > i {
-              float: left;
-              font-style: normal;
-              margin: 0 5px; }
-        header .search .search-tit .search-game .search-game-footer {
-          clear: both;
-          width: 418px;
-          height: 100px;
-          background: #fff; }
-          header .search .search-tit .search-game .search-game-footer .search-game-footer-left {
-            width: 80px;
-            height: 100px;
-            background: #fff;
-            color: #000;
-            font-weight: 600; }
-          header .search .search-tit .search-game .search-game-footer .search-game-footer-right {
-            float: right;
-            font-size: 12px;
-            width: 300px;
-            height: 100px;
-            background: #fff;
-            color: #1b0e0e; }
-            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > a {
-              float: left; }
-            header .search .search-tit .search-game .search-game-footer .search-game-footer-right > i {
-              float: left;
-              font-style: normal;
-              margin: 0 5px; }
-    header .search .search-tit:hover {
-      height: 38px; }
-    header .search .search-tit:hover .search-game {
-      display: block; }
-    header .search .search-txt {
-      border: 0;
-      width: 330px;
-      height: 34px;
-      background: #fff;
-      text-indent: 5px;
-      float: left; }
-    header .search .search-btn {
-      width: 38px;
-      height: 35px;
-      background: #f74a4a;
-      float: right;
-      border: 0;
-      border-bottom: 3px solid #e43333;
-      background-image: url(../img/search-btn.png); }
-    header .search .mar {
-      margin-right: 25px; }
+        top: 0;
+        cursor: pointer; }
+        #wrap-all nav .lol-navbox li a {
+          font-size: 18px;
+          color: #cedee7;
+          text-decoration: none; }
+        #wrap-all nav .lol-navbox li .new {
+          float: right;
+          width: 20px;
+          height: 17px;
+          margin-top: 23px;
+          margin-right: 10px;
+          background: url(../img/newtips.png) no-repeat; }
+      #wrap-all nav .lol-navbox .lol-navbox-firstli {
+        width: 152px;
+        height: 76px;
+        background: url(../img/navico.png) no-repeat -275px -5px; }
+        #wrap-all nav .lol-navbox .lol-navbox-firstli a {
+          font-weight: bold; }
+      #wrap-all nav .lol-navbox li:hover a {
+        color: #ff5d04;
+        text-decoration: none; }
+      #wrap-all nav .lol-navbox .lol-cart {
+        width: 230px;
+        height: 68px;
+        line-height: 68px;
+        cursor: pointer; }
+        #wrap-all nav .lol-navbox .lol-cart a {
+          color: #ff5d04;
+          float: left;
+          margin-left: 40px; }
+          #wrap-all nav .lol-navbox .lol-cart a .lol-cart-ic {
+            color: #fff;
+            float: left;
+            margin-top: 14px;
+            margin-right: 10px;
+            width: 36px;
+            height: 30px;
+            background: url(../img/navico.png) no-repeat -238px 0px; }
+        #wrap-all nav .lol-navbox .lol-cart i {
+          font-style: normal;
+          margin: 0 30px;
+          float: right;
+          color: #fff; }
+        #wrap-all nav .lol-navbox .lol-cart b {
+          float: right;
+          color: #fff;
+          margin-right: 20px; }
 
 #footer-area {
   width: 100%;
