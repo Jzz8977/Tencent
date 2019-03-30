@@ -1,0 +1,208 @@
+.list-section .list-section-main .infor-section-main-right {
+  width: 930px;
+  min-height: 300px;
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+  box-sizing: border-box;
+  padding: 40px 60px 40px;
+  background: #fff; }
+  .list-section .list-section-main .infor-section-main-right .c1 {
+    clear: both;
+    width: 260px; }
+    .list-section .list-section-main .infor-section-main-right .c1 p {
+      width: 100%; }
+      .list-section .list-section-main .infor-section-main-right .c1 p .collection {
+        float: right;
+        width: 120px;
+        margin-right: 40px;
+        color: #ccc;
+        font-size: 12px; }
+        .list-section .list-section-main .infor-section-main-right .c1 p .collection .collectionL {
+          margin-top: 10px;
+          float: left;
+          width: 20px;
+          height: 20px;
+          background: url(../img/comico.png) no-repeat;
+          background-position: 0 -525px; }
+      .list-section .list-section-main .infor-section-main-right .c1 p .enlarge {
+        float: right;
+        width: 20px;
+        margin-right: 0;
+        color: #000; }
+        .list-section .list-section-main .infor-section-main-right .c1 p .enlarge s {
+          float: right;
+          width: 20px;
+          height: 20px;
+          background: url(../img/comico.png) no-repeat;
+          background-position: 0 -969px; }
+  .list-section .list-section-main .infor-section-main-right .c2 {
+    width: 460px; }
+  .list-section .list-section-main .infor-section-main-right .c1, .list-section .list-section-main .infor-section-main-right .c2 {
+    float: left;
+    height: 220px;
+    overflow: hidden;
+    margin-right: 20px; }
+    .list-section .list-section-main .infor-section-main-right .c1 img, .list-section .list-section-main .infor-section-main-right .c2 img {
+      margin-top: 20px; }
+    .list-section .list-section-main .infor-section-main-right .c1 h5, .list-section .list-section-main .infor-section-main-right .c2 h5 {
+      font-size: 20px; }
+    .list-section .list-section-main .infor-section-main-right .c1 .price, .list-section .list-section-main .infor-section-main-right .c2 .price {
+      overflow: hidden;
+      float: none;
+      width: 455px;
+      height: 77px;
+      background: url(../img/comico.png) no-repeat 0px -140px; }
+      .list-section .list-section-main .infor-section-main-right .c1 .price > p, .list-section .list-section-main .infor-section-main-right .c2 .price > p {
+        line-height: 40px;
+        font-size: 14px; }
+        .list-section .list-section-main .infor-section-main-right .c1 .price > p span, .list-section .list-section-main .infor-section-main-right .c2 .price > p span {
+          color: #ff5900;
+          font-size: 25px;
+          font-weight: 600; }
+    .list-section .list-section-main .infor-section-main-right .c1 h6, .list-section .list-section-main .infor-section-main-right .c2 h6 {
+      clear: both;
+      margin-top: 20px;
+      height: 20px; }
+  .list-section .list-section-main .infor-section-main-right a {
+    width: 142px;
+    height: 42px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none; }
+  .list-section .list-section-main .infor-section-main-right .red {
+    background: #ff5900; }
+  .list-section .list-section-main .infor-section-main-right .blue {
+    background: #259afe; }
+  .list-section .list-section-main .infor-section-main-right .c3 {
+    clear: both;
+    margin-top: 300px;
+    width: 805px;
+    height: 120px;
+    border: 1px solid #ccc;
+    position: relative; }
+    .list-section .list-section-main .infor-section-main-right .c3 .h2 {
+      width: 100%;
+      height: 30px;
+      background: url(../img/comico.png) no-repeat -10px -220px;
+      text-indent: 5px; }
+      .list-section .list-section-main .infor-section-main-right .c3 .h2 span {
+        background: #fff;
+        line-height: 30px;
+        text-indent: 5px;
+        float: left; }
+      .list-section .list-section-main .infor-section-main-right .c3 .h2 a {
+        float: right;
+        color: #ccc;
+        margin: 0;
+        width: 55px;
+        height: 30px;
+        font-size: 12px; }
+      .list-section .list-section-main .infor-section-main-right .c3 .h2 .appcode {
+        height: 35px;
+        position: relative;
+        background: url(../img/comico.png) no-repeat 0px -340px; }
+        .list-section .list-section-main .infor-section-main-right .c3 .h2 .appcode div {
+          background: #fff;
+          position: absolute;
+          width: 160px;
+          height: 160px;
+          right: -10px;
+          top: 35px;
+          display: none; }
+          .list-section .list-section-main .infor-section-main-right .c3 .h2 .appcode div img {
+            width: 100%; }
+    .list-section .list-section-main .infor-section-main-right .c3 p {
+      font-size: 14px;
+      position: relative;
+      bottom: -50px;
+      left: 20px;
+      text-indent: 60px; }
+
+.mark2 {
+  width: 767px;
+  height: auto;
+  position: fixed;
+  left: 30%;
+  top: 22%;
+  background: rgba(204, 204, 204, 0.7);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  z-index: 999; }
+  .mark2 .float2 {
+    width: 750px;
+    height: 460px;
+    position: relative;
+    left: 8px;
+    top: 8px; }
+    .mark2 .float2 img {
+      width: 100%;
+      height: auto; }
+
+.mark2::after {
+  content: "X";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  top: -10px;
+  right: -10px;
+  z-index: 999; }
+
+.mark1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(204, 204, 204, 0.7);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  z-index: 999;
+  left: 0;
+  top: 0; }
+  .mark1 .float1 {
+    width: 380px;
+    height: 150px;
+    background: #fff;
+    position: relative;
+    left: 40%;
+    top: 35%; }
+    .mark1 .float1 h3 {
+      color: #000;
+      font-weight: normal;
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      background: #f5f5f5;
+      margin: 0;
+      text-indent: 10px; }
+    .mark1 .float1 .tip {
+      overflow: hidden;
+      width: 100%; }
+      .mark1 .float1 .tip p {
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333333;
+        text-indent: 10px; }
+      .mark1 .float1 .tip a {
+        width: 130px;
+        height: 38px;
+        float: left;
+        border: 1px solid #ff4242;
+        border-radius: 4px;
+        margin-left: 40px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 38px;
+        text-decoration: none;
+        color: #ff4242; }
+      .mark1 .float1 .tip .continue {
+        background: #ff4242;
+        color: #fff; }

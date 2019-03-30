@@ -131,7 +131,7 @@ $(function(){
     $('.argeeCheck').click(function(){
         $(this).css("display","none").prev().css("display","block");
     })
-    
+    console.log($.cookie('user'));
     $('.register-btn').click(function(){
         if(nameFlag = true&& pwdFlag == true&&phoneFlag == true&&argeeFlag == true){
             allFlag = true;
@@ -162,19 +162,51 @@ $(function(){
             $('.close').click(function(){
                 $(this).parents('.mark').remove();
             })
-            
+            console.log($.cookie('user'));
             $('#sendmsg').click(function(){
                 // alert(1);
                 // alert(1);
-                var $name = $('#userName').val();
-                console.log($name);
-                
-                var $pwd = $('#userpwd').val();
-                console.log($pwd);
-                
-                $.cookie('user',`{"name":"${$name}","pwd":"${$pwd}"}`,{path:'/',expires:7});
-                location.href="../../index.html";
-                
+                var name = $('#userName').val();
+//                 console.log($name);
+//                 
+                var pwd = $('#userpwd').val();
+//                 console.log($pwd);
+//                 var str = `[{}]`
+//                 $.cookie('user',`{"name":"${$name}","pwd":"${$pwd}"}`,{path:'/',expires:7});
+//                 location.href="../../index.html";
+//               
+				var phone = $('#number').val();
+				
+				
+				var objStr = `[{ "${phone}" :{  "name" : "${name}","pwd" : "${pwd}"}}]`;
+				// var cartObj = { id :{  "src" : src,"alt" : alt ,"tit" : tit ,"price" : price."num" : 1}}`;
+				var cartStr = $.cookie('user');
+				console.log(cartStr);
+				
+				if(!cartStr){
+					$.cookie('user',objStr,{expires:7,path:'/'});
+				}else{
+					var obj = JSON.parse(cartStr);
+					console.log(obj);
+					for(var i = 0 ; i < obj.length;i++){
+						// console.log(i);
+						var data = obj[i];
+						console.log(i,data);
+						if(phone in data){
+							alert('次电话已经注册了！');
+						}else{
+							data[phone] = {
+								name,
+								pwd
+							}
+						}
+						
+					}
+					var Str = JSON.stringify(obj);
+					$.cookie('user',Str,{expires:7,path:'/'});
+					console.log($.cookie('user'));
+					location.href="../../index.html";
+				}
             })
         }
     })

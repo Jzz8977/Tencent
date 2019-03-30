@@ -639,3 +639,34 @@ body {
           line-height: 42px;
           text-decoration: none;
           margin: 20px 50px; }
+
+#footer-area #help {
+  width: 70px;
+  height: 101px;
+  position: fixed;
+  left: 90%;
+  top: 80%; }
+  #footer-area #help .toHeader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 35px;
+    background: #fff; }
+    #footer-area #help .toHeader s {
+      margin-left: 10px;
+      background: url(../img/header.png) no-repeat -121px -159px;
+      display: block;
+      width: 30px;
+      height: 15px; }
+  #footer-area #help .feedback {
+    width: 70px;
+    height: 33px;
+    background: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #ccc; }

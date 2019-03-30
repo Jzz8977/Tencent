@@ -32,6 +32,7 @@ $(function(){
 	})
 	//登录
 	$('.login').click(function(){
+		console.log($.cookie('user'));
 		$('<div>').prependTo($(document.body)).addClass('mark');
 		$('<div>').prependTo($('.mark')).addClass('float');
 		var str  = `
@@ -60,19 +61,32 @@ $(function(){
 			var $name = $(this).parent().prev().prev().children().val();
 			
 			var $pwd = $(this).parent().prev().children().val();
-			console.log($name, $pwd);	
+			
+			var userName;
+			var userPwd;
 			//获取cookie
 			var $cookieStr = $.cookie('user');
-			var $cookieObj = JSON.parse($cookieStr);
-			console.log($cookieStr);	
-			console.log($cookieObj.pwd);	
-			var userName = 	$cookieObj.name;
-			var userPwd = $cookieObj.pwd;
+			var cartObj = JSON.parse($cookieStr);
+			// console.log(cartObj);
+			// console.log(typeof cartObj);
+			var dataa = cartObj[0];
+			// console.log(typeof dataa);
+			for(var i  in dataa){
+				// console.log(cartObj);
+				var data = dataa[i];
+				console.log(data);
+				userName = data.name;
+				userPwd = data.pwd;
+
+			}
+			
+			// console.log(userName, userPwd);	
 			//待比较
-			if($name ==userName  && $pwd==userPwd){
+			if($name === userName  && $pwd === userPwd){
 				console.log("登录成功");
 				$.cookie('login',`${$name}`,{path:'/',expires:7});
 				$(this).parents('.mark').remove();
+				$('.register-login').empty().html(`欢迎您,<a href="javascript:;" class="out">退出</a><a href="javascript:;" class="">${$.cookie('login')  }</a>`)
 			}
 			
 		})
@@ -105,53 +119,55 @@ $(function(){
 		$(this).css('background','#fff');
 	})
 })
+//轮播图
 $(function(){
 	var $ul = $('.banner-middle ul');
     var $ol = $('.banner-middle ol');
 	var $ulli = $('.banner-middle ul li');
+	
 	var $olli = $('.banner-middle ol li');
 	var timerA = null;
-	var index = 4;
+	var index = 0;
+	var wid = $ulli.eq(0).width();
+	$ul.append($ulli.eq(0).clone());
+	// console.log( $ul.index());
+	// console.log(wid * $ulli.size());
+	$ul.css({"width":wid*($ulli.size()+1)});
 	
 	$ulli.each(function(){
 		$(this).find('p').html($(this).find('img').attr('alt'));
 	});
-	timerA=setInterval(function(){
-		
-		// console.log(index+"a");
-		// console.log(index);
-		$ulli.eq(index --).stop().animate({left:-770},500,function(){
-			$(this).prependTo($ul);
-			// $ul.animate({"left": "60%"},500);
-		
-			$olli.eq(4-index).addClass('red').siblings().removeClass();
-			$(this).animate({left:0},200,function(){
-				// $ul.animate({"left": "0%"},500);
-			})
-		})
-		if(index ==-1){
-			index =4;
-		}
-		
-		
-	}, 2000);
-	$ul.mouseenter(function(){
-		clearInterval(timerA);
-		timerA = null;
+	
+	$ul.click(function(){
+		console.log($ul.index());
 	})
-	$ul.mouseover(function(){
-		timerA = setInterval(function(){
-			$ulli.eq(index --).stop().animate({left:-770},500,function(){
-				$(this).prependTo($ul);
-				$olli.eq(4-index).addClass('red').siblings().removeClass();
-				$(this).animate({left:0},200,function(){})
-			})
-			if(index ==-1){
-				index =4;
+	timerA = setInterval(auto,2000);
+	function auto(){
+		// console.log($ulli.index());
+		$olli.eq(index).addClass('red').siblings().removeClass();
+		$ul.animate({left:wid* -index},500,function(){
+			if(index==6){
+			index = 1;
+			$olli.eq(0).addClass('red').siblings().removeClass();
+			$ul.finish();
+			$ul.css({left:0});
 			}
-			
-			
-		}, 2000);
+		});
+		index++;
+	}
+	$olli.click(function(){
+		
+		console.log($(this).index());
+		index=$(this).index();
+		console.log($ulli.index(index),index);
+		$ul.animate({left: -index*wid});
+		$(this).addClass('red').siblings().removeClass();
+	})
+	$('#bot4').mouseenter(function(){
+		clearInterval(timerA);
+	})
+	$('#bot4').mouseleave(function(){
+		timerA = setInterval(auto,2000);
 	})
 })
 

@@ -583,11 +583,10 @@ nav {
       position: relative; }
       #wrap-section #banner .banner-middle ul {
         height: 100%;
-        width: 3850px;
         padding: 0;
         position: absolute; }
         #wrap-section #banner .banner-middle ul li {
-          position: absolute;
+          float: left;
           height: 100%;
           width: 770px; }
           #wrap-section #banner .banner-middle ul li img {
